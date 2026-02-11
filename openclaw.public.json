@@ -72,9 +72,7 @@
             "contextWindow": 200000,
             "maxTokens": 4096
           }
-        ],
-        "token": "__REDACTED__",
-        "key": "__REDACTED__"
+        ]
       },
       "zju-gemini": {
         "baseUrl": "https://zjuapi.com/v1/",
@@ -113,9 +111,7 @@
             "contextWindow": 2000000,
             "maxTokens": 16384
           }
-        ],
-        "token": "__REDACTED__",
-        "key": "__REDACTED__"
+        ]
       },
       "zju-openai": {
         "baseUrl": "https://zjuapi.com/v1/",
@@ -154,9 +150,7 @@
             "contextWindow": 128000,
             "maxTokens": 4096
           }
-        ],
-        "token": "__REDACTED__",
-        "key": "__REDACTED__"
+        ]
       },
       "zju-codex": {
         "baseUrl": "https://zjuapi.com/v1/",
@@ -195,9 +189,7 @@
             "contextWindow": 128000,
             "maxTokens": 4096
           }
-        ],
-        "token": "__REDACTED__",
-        "key": "__REDACTED__"
+        ]
       },
       "zju-kimi": {
         "baseUrl": "https://zjuapi.com/v1/",
@@ -220,9 +212,7 @@
             "contextWindow": 128000,
             "maxTokens": 16384
           }
-        ],
-        "token": "__REDACTED__",
-        "key": "__REDACTED__"
+        ]
       }
     }
   },

@@ -254,7 +254,7 @@
         "zju-codex/gpt-5.1-codex": {},
         "zju-kimi/kimi-k2-thinking": {}
       },
-      "workspace": "/root/.openclaw/workspace-main",
+      "workspace": "/root/.openclaw/workspace-ask",
       "compaction": {
         "mode": "safeguard"
       },
@@ -267,7 +267,7 @@
     "list": [
       {
         "id": "main",
-        "default": true,
+        "default": false,
         "name": "Personal Assistant",
         "subagents": {
           "allowAgents": [
@@ -286,7 +286,7 @@
       {
         "id": "ask",
         "name": "Ask (Restricted)",
-        "default": false,
+        "default": true,
         "workspace": "/root/.openclaw/workspace-ask"
       }
     ]
@@ -385,7 +385,7 @@
         "channel": "feishu",
         "peer": {
           "kind": "direct",
-          "id": "ou_f25856d7b9582b83e1a06b8ea40c9981"
+          "id": "ou_dummy_not_owner"
         }
       }
     },

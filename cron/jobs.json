@@ -2,11 +2,11 @@
   "version": 1,
   "jobs": [
     {
-      "id": "1de0bc3b-281b-4555-9bd2-648d011c2dd7",
+      "id": "25b68941-636a-415f-81d8-5f5a3c06d4f6",
       "name": "gitsync-daily",
       "enabled": true,
-      "createdAtMs": 1770825525352,
-      "updatedAtMs": 1770825780622,
+      "createdAtMs": 1770827257810,
+      "updatedAtMs": 1770827257810,
       "schedule": {
         "kind": "cron",
         "expr": "30 3 * * *",
@@ -23,11 +23,7 @@
         "channel": "last"
       },
       "state": {
-        "nextRunAtMs": 1770838200000,
-        "lastRunAtMs": 1770825757193,
-        "lastStatus": "ok",
-        "lastDurationMs": 23429,
-        "consecutiveErrors": 0
+        "nextRunAtMs": 1770838200000
       }
     }
   ]

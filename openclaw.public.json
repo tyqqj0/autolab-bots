@@ -5,8 +5,8 @@
   },
   "env": {
     "vars": {
-      "HTTP_PROXY": "http://host.docker.internal:7897",
-      "HTTPS_PROXY": "http://host.docker.internal:7897",
+      "HTTP_PROXY": "http://127.0.0.1:7897",
+      "HTTPS_PROXY": "http://127.0.0.1:7897",
       "NO_PROXY": "localhost,127.0.0.1,::1,zjuapi.com,*.zjuapi.com",
       "ZJUAPI_BASE_URL": "https://zjuapi.com"
     }
@@ -254,7 +254,7 @@
         "zju-codex/gpt-5.1-codex": {},
         "zju-kimi/kimi-k2-thinking": {}
       },
-      "workspace": "/root/.openclaw/workspace-main",
+      "workspace": "/root/.openclaw/workspace-ask",
       "compaction": {
         "mode": "safeguard"
       },
@@ -267,14 +267,13 @@
     "list": [
       {
         "id": "main",
-        "default": true,
+        "default": false,
         "name": "Personal Assistant",
         "subagents": {
           "allowAgents": [
             "researcher"
           ]
-        },
-        "workspace": "/root/.openclaw/workspace-main"
+        }
       },
       {
         "id": "researcher",
@@ -286,8 +285,7 @@
       {
         "id": "ask",
         "name": "Ask (Restricted)",
-        "default": false,
-        "workspace": "/root/.openclaw/workspace-ask"
+        "default": true
       }
     ]
   },
@@ -335,19 +333,18 @@
       "dmPolicy": "pairing",
       "accounts": {
         "main": {
-          "appId": "cli_a9060c499bb89cbb",
+          "appId": "cli_a9f49fc128b8dcd9",
           "appSecret": "__REDACTED__",
-          "botName": "郭凯文",
-          "domain": "feishu"
+          "botName": "我的AI助手"
         }
       },
-      "groupPolicy": "disabled",
+      "groupPolicy": "open",
       "blockStreaming": true,
       "streaming": true
     }
   },
   "gateway": {
-    "port": 28790,
+    "port": 18789,
     "mode": "local",
     "bind": "loopback",
     "auth": {
@@ -377,27 +374,5 @@
         "installedAt": "2026-02-09T04:20:05.606Z"
       }
     }
-  },
-  "bindings": [
-    {
-      "agentId": "main",
-      "match": {
-        "channel": "feishu",
-        "peer": {
-          "kind": "direct",
-          "id": "ou_81f0e43c51b96691f027f5647389f418"
-        }
-      }
-    },
-    {
-      "agentId": "ask",
-      "match": {
-        "channel": "feishu",
-        "peer": {
-          "kind": "direct",
-          "id": "*"
-        }
-      }
-    }
-  ]
+  }
 }

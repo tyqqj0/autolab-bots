@@ -2,11 +2,11 @@
   "version": 1,
   "jobs": [
     {
-      "id": "f123b1d5-abed-4eaf-8366-5f0c35bf687f",
+      "id": "947a1067-9bce-4c49-810a-59ee11ee1daf",
       "name": "gitsync-daily",
       "enabled": true,
-      "createdAtMs": 1770831348051,
-      "updatedAtMs": 1770831348051,
+      "createdAtMs": 1770835716458,
+      "updatedAtMs": 1770835716458,
       "schedule": {
         "kind": "cron",
         "expr": "30 3 * * *",

@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "6896f62c-29df-40e3-a0b8-b8f32d9f9812",
+      "name": "gitsync-daily",
+      "enabled": true,
+      "createdAtMs": 1770864221155,
+      "updatedAtMs": 1770864221155,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 3 * * *",
+        "tz": "Asia/Shanghai"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "bash /root/.openclaw/scripts/git-sync.sh push"
+      },
+      "delivery": {
+        "mode": "none",
+        "channel": "last"
+      },
+      "state": {
+        "nextRunAtMs": 1770924600000
+      }
+    }
+  ]
+}

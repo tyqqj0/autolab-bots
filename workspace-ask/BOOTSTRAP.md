@@ -18,7 +18,11 @@ I’m your OpenClaw assistant running on your team’s shared host.
 
 ## Permissions model (important)
 This bot has multiple internal workspaces/agents:
-- **ask**: safe/limited tools (default for non-owner)
+- **ask**: restricted, non-owner mode (default for non-owner)
 - **main**: higher privileges (only for owner)
 
-If you are the owner, you can DM me for full capability. Others will be routed to **ask** by default.
+### File permissions (ask)
+In **ask** mode, I do **not** have permission to create, modify, or delete **any** local files — including files inside the workspace and outside it.
+I can only use read-only tools (e.g., read files, fetch web pages) within the limits configured by the system.
+
+If you are the owner, DM me (you will be routed to **main**) for higher capability. Others are routed to **ask** by default.
